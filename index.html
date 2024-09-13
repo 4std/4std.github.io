@@ -1,6 +1,95 @@
-<center>
-<img src="bg.jpg"/>
-<br/>
-<a href="https://drive.google.com/drive/folders/17qlxgkVFgh6eqB1jpGqoAmVjtKda2cMu?usp=drive_link">Software</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-<a href="about.html">About</a>
-</center>
+<!DOCTYPE html>
+<html>
+<head>
+<title>4std</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+	.shadow {
+		color: white;
+		text-shadow: 2px 2px 4px #000000;
+	}
+</style>
+</head>
+<body class="w3-light-grey">
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:60px;margin-right:60px;"> 
+  <header class="w3-container" style="padding-top:30px; padding-bottom:30px">
+    <h1>
+		<img src="avatar.png" class="w3-circle" style="width:46px">
+		<span class="shadow">4std</span>
+	</h1>
+  </header>
+
+  <div class="w3-row-padding w3-margin-bottom">
+    <div class="w3-quarter">
+      <div class="w3-container w3-orange w3-text-white w3-padding-16">
+	    <a href="https://drive.google.com/drive/folders/17qlxgkVFgh6eqB1jpGqoAmVjtKda2cMu?usp=drive_link" style="text-decoration:none;">
+			<div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
+			<div class="w3-clear"></div>
+			<h4 style="text-align:right">Download</h4>
+		</a>		
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-red w3-padding-16">
+        <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div>
+        <div class="w3-clear"></div>
+        <h4 style="text-align:right">Messages</h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-blue w3-padding-16">
+        <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
+        <div class="w3-clear"></div>
+        <h4 style="text-align:right">Views</h4>
+      </div>
+    </div>    
+    <div class="w3-quarter">
+      <div class="w3-container w3-teal w3-text-white w3-padding-16">
+        <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+        <div class="w3-clear"></div>
+        <h4 style="text-align:right">Users</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-light-grey">
+    <p>&copy; 2024 Power by 4std</p>
+  </footer>
+
+  <!-- End page content -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
