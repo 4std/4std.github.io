@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>4student</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="../css/site.css" rel="stylesheet"/>
+</head>
+
+<body>
+  <div class="container mt-3">
+    <div class="row mb-5 border-bottom pb-3">
+      <div class="col">
+        <img src="../avatar.png" class="rounded-circle" style="width:60px">
+        &nbsp;&nbsp;
+        <span class="text-shadow align-middle">4 s t u d e n t</span>
+      </div>
+    </div>
+    <div class="row gx-3" style="min-height:300px;">
+      <div class="col-md-3 mt-3">
+        <a href="#" class="folder" data-id="1"
+          style="text-decoration:none;">
+          <div class="small-card text-white bg-warning">
+            <div class=""><i class="fa fa-share-alt fs-1"></i></div>
+            <h4 class="right-bottom">Folder 1</h4>
+          </div>
+        </a>
+      </div>
+	  <div class="col-md-3 mt-3">
+        <a href="#" class="folder" data-id="2"
+          style="text-decoration:none;">
+          <div class="small-card text-white bg-danger">
+            <div class=""><i class="fa fa-share-alt fs-1"></i></div>
+            <h4 class="right-bottom">Folder 2</h4>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 mt-3">
+        <a href="#"
+          style="text-decoration:none;">
+          <div class="small-card text-white bg-primary">
+            <div class=""><i class="fa fa-share-alt fs-1"></i></div>
+            <h4 class="right-bottom">Folder 3</h4>
+          </div>
+        </a>
+      </div>
+	  <div class="col-md-3 mt-3">
+        <a href="#" 
+          style="text-decoration:none;">
+          <div class="small-card text-white bg-info">
+            <div class=""><i class="fa fa-share-alt fs-1"></i></div>
+            <h4 class="right-bottom">Folder 4</h4>
+          </div>
+        </a>
+      </div>	  
+    </div>
+    <div class="row mt-5 border-top">
+      <div class="col p-3">
+        &copy; 2024 Power by 4student
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal" id="confirmationModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title"><i class="bi bi-check-lg"></i> Confirmation</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <label for="fn">Your full name:</label>
+          <input type="password" id="fn" class="form-control mt-3 mb-3">
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" id="btnConfirm" class="btn btn-sm btn-outline-primary" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm</button>
+          <button type="button" class="btn btn-sm btn-outline-danger" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i> Cancel</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+<script src="../js/jquery-3.6.0.min.js"></script>
