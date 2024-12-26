@@ -22,3 +22,7 @@
     height: 80px;
     padding: 10px;
 }
+
+.content {
+    min-height: 300px;
+}
