@@ -1,0 +1,37 @@
+<div class="col-sm-12">
+    <h2>Encode/Decode String</h2>
+    <hr/>
+</div>
+<div class="col-sm-6">
+    <div class="mt-3">
+        <label for="txt1" class="form-label">Text to encode:</label>
+        <input type="text" value="Hello" id="txt1" class="form-control" placeholder="Enter text to encode">
+    </div>
+    <div class="mt-3">
+        <label for="txt2" class="form-label">Text to decode:</label>
+        <input type="text" id="txt2" class="form-control" placeholder="Enter text to decode">
+    </div>
+    <div class="mt-3 float-end">
+        <button onclick="encode_string()" class="btn btn-sm btn-outline-primary"><i
+                class="bi bi-check-lg"></i> Encode</button>
+        <button onclick="decode_string()" class="btn btn-sm btn-outline-danger"><i class="bi bi-x-lg"></i>
+            Decode</button>
+    </div>
+    <div class="clearfix"></div>
+    <div class="mt-3">
+        Result: <span id="result"></span>
+    </div>
+</div>
+<div class="col-sm-6 center-content">
+    <img src="/images/encode.gif" />
+</div>
+<script>
+    function encode_string() {
+        txt2.value = btoa(txt1.value);
+        result.innerHTML = btoa(txt1.value);
+    }
+    function decode_string() {
+        txt1.value = atob(txt2.value);
+        result.innerHTML = atob(txt2.value);
+    }
+</script>

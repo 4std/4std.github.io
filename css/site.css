@@ -23,6 +23,25 @@
     padding: 10px;
 }
 
+#header {
+    /*    margin: 20px 0px;*/
+    padding: 20px 0px;
+    border-bottom: 1px solid blue;
+}
+
+#footer {
+    /*    margin: 20px 0px;*/
+    padding: 20px 0px;
+    border-top: 1px solid blue;
+}
+
 #content {
     min-height: 300px;
+    padding: 20px 0px;
+}
+
+.center-content {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }

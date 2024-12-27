@@ -1,0 +1,38 @@
+<div class="col-sm-12">
+    <h2>Hash String</h2>
+    <hr/>
+</div>
+<div class="col-sm-6">
+    <div class="mt-3">
+        <label for="txt1" class="form-label">Text to encode:</label>
+        <input type="text" value="Hello" id="txt1" class="form-control" placeholder="Enter text to encode">
+    </div>
+    <div class="mt-3 float-end">
+        <button onclick="generateSHA256()" class="btn btn-sm btn-outline-primary"><i
+                class="bi bi-check-lg"></i> Encode</button>
+    </div>
+    <div class="clearfix"></div>
+    <div class="mt-3">
+        Result: <span id="result"></span>
+    </div>
+</div>
+<div class="col-sm-6" style="display: flex; justify-content: center; align-items: center;">
+    <img src="/images/hash.png" />
+</div>
+
+<script>
+    async function generateSHA256() {
+        const encoder = new TextEncoder(); // Mã hóa chuỗi thành một ArrayBuffer
+        const data = encoder.encode(txt1.value); // Mã hóa chuỗi
+
+        // Tính toán SHA-256 băm
+        const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+
+        // Chuyển đổi ArrayBuffer thành chuỗi hexadecimal
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        const hashHex = hashArray.map(byte => byte.toString(16).padStart(2, '0')).join('');
+
+        // Hiển thị kết quả
+        result.textContent = hashHex;
+    }
+</script>

@@ -1,45 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <title>4student</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link href="/css/site.css" rel="stylesheet" />
-</head>
+    <head>
+        <title>4student</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="/css/site.css" rel="stylesheet" />
+    </head>
 
-<body>
-  <div class="container">
-    <div class="row" id="header"></div>
-    <div class="row" id="sub-header">
-      <div class="col">
-        <h2>Demo</h2>
-      </div>
-    </div>
-    <div class="row mb-5 border-bottom pb-3" id="content">
-      <div class="col">
-        <a href="encode.html">Encode/Decode String</a><br />
-        <a href="hash.html">Hash String</a><br />
-      </div>
-    </div>
-    <div class="row" id="footer"></div>
-  </div>
-</body>
+    <body>
+        <div class="container">
+            <div class="row" id="header"></div>
+            <div class="row" id="content"></div>
+            <div class="row" id="footer"></div>
+        </div>
+        <div id="model"></div>
+    </body>
 
 </html>
+
 <script src="/js/jquery-3.6.0.min.js"></script>
 <script src="/js/4std.js"></script>
 <script>
-  function encode_string() {
-    txt2.value = btoa(txt1.value);
-    result.innerHTML = btoa(txt1.value);
-  }
-  function decode_string() {
-    txt1.value = atob(txt2.value);
-    result.innerHTML = atob(txt2.value);
-  }
+    $("#content").load("_index.html", function () {});
 </script>

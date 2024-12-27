@@ -1,4 +1,5 @@
-$("#header").load("/header.html", function () {
-  //alert("Loading the header file has been finished.");
-});
-$("#footer").load("/footer.html", function () {});
+$("#header").load("/_header.html", function () {});
+
+$("#footer").load("/_footer.html", function () {});
+
+$("#model").load("/_confirm-model.html", function () {});
