@@ -1,5 +1,5 @@
-$("#header").load("https://4std.github.io/v-header.html", function () {});
+$("#header").load("/v-header.html", function () {});
 
-$("#footer").load("https://4std.github.io/v-footer.html", function () {});
+$("#footer").load("/v-footer.html", function () {});
 
-$("#model").load("https://4std.github.io/v-confirm-model.html", function () {});
+$("#model").load("/v-confirm-model.html", function () {});
