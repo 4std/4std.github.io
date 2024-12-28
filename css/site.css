@@ -1,5 +1,5 @@
 .text-shadow {
-    color: white;
+    color: red;
     text-shadow: 2px 2px 4px #000000;
     font-size: calc(1.375rem + 1.5vw);
     font-weight: 500;
@@ -24,13 +24,12 @@
 }
 
 #header {
-    /*    margin: 20px 0px;*/
+    position: relative;
     padding: 20px 0px;
     border-bottom: 1px solid blue;
 }
 
 #footer {
-    /*    margin: 20px 0px;*/
     padding: 20px 0px;
     border-top: 1px solid blue;
 }
